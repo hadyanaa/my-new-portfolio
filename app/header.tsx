@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -7,19 +8,29 @@ export default function Header(){
     return (
         <div className="flex flex-col justify-center gap-4">
             <Link href="/">
-                <div className={`rounded-full w-14 h-14 ${pathname === '/' ?  'bg-secondary' : 'bg-accent'}`}>Home</div>
+                {pathname === '/' ? <Image src="/icons/home.png" alt="icon home" width={48} height={48}/> :
+                <Image src="/icons/home-white.png" alt="icon home" width={48} height={48}/>
+                }
             </Link>
             <Link href="/about">
-                <div className={`rounded-full w-14 h-14 ${pathname === '/about' ?  'bg-secondary' : 'bg-accent'}`}>About Me</div>
+                {pathname === '/about' ? <Image src="/icons/about.png" alt="icon about" width={48} height={48}/> :
+                <Image src="/icons/about-white.png" alt="icon about" width={48} height={48}/>
+                }
             </Link>
             <Link href="/portfolio">
-                <div className={`rounded-full w-14 h-14 ${pathname === '/portfolio' ?  'bg-secondary' : 'bg-accent'}`}>My Portfolio</div>
+                {pathname === '/portfolio' ? <Image src="/icons/portfolio.png" alt="icon portfolio" width={48} height={48}/> :
+                <Image src="/icons/portfolio-white.png" alt="icon portfolio" width={48} height={48}/>
+                }
             </Link>
             <Link href="/contact">
-                <div className={`rounded-full w-14 h-14 ${pathname === '/contact' ?  'bg-secondary' : 'bg-accent'}`}>Contact</div>
+                {pathname === '/contact' ? <Image src="/icons/contact.png" alt="icon contact" width={48} height={48}/> :
+                <Image src="/icons/contact-white.png" alt="icon contact" width={48} height={48}/>
+                }
             </Link>
             <Link href="/blog">
-                <div className={`rounded-full w-14 h-14 ${pathname === '/blog' ?  'bg-secondary' : 'bg-accent'}`}>My Blog</div>
+                {pathname === '/blog' ? <Image src="/icons/blog.png" alt="icon blog" width={48} height={48}/> :
+                <Image src="/icons/blog-white.png" alt="icon blog" width={48} height={48}/>
+                }
             </Link>
         </div>
     );
