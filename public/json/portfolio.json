@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Product Digital API",
+    "category": "Frontend",
+    "description": "Created a web utilizing NextJs and Tailwind",
+    "stack": ["next-js", "tailwind css", "laravel"],
+    "url_image": "/portfolio/ioh-api.png"
+  },
+  {
+    "title": "Glowthinc E-Commerce App",
+    "category": "Fullstack",
+    "description": "-",
+    "stack": ["react-js", "tailwind css", "node-js"],
+    "url_image": "/portfolio/project-bulan4.png"   
+  },
+  {
+    "title": "Sportyan E-Commerce App",
+    "category": "Fullstack",
+    "description": "-",
+    "stack": ["react-js", "tailwind css", "node-js"],
+    "url_image": "/portfolio/project-bulan2.png"   
+  },
+  {
+    "title": "Movie & Game App",
+    "category": "Frontend",
+    "description": "",
+    "stack": ["react-js", "tailwind css"],
+    "url_image": "/portfolio/project-bulan1.png"
+  },
+  {
+    "title": "CRUD React App",
+    "category": "Frontend",
+    "description": "",
+    "stack": ["react-js", "tailwind css"],
+    "url_image": "/portfolio/crud-reactjs.png"   
+  },
+  {
+    "title": "Portfolio Website (Old)",
+    "category": "Frontend",
+    "description": "",
+    "stack": ["HTML", "Bootstrap"],
+    "url_image": "/portfolio/wp.png"   
+  },
+  {
+    "title": "UX Designer",
+    "category": "Freelance",
+    "description": "",
+    "stack": ["figma"],
+    "url_image": "/portfolio/ux.png"   
+  },
+  {
+    "title": "UI/UX Prototyping",
+    "category": "College",
+    "description": "",
+    "stack": ["figma"],
+    "url_image": "/portfolio/ps.png"   
+  },
+  {
+    "title": "Project Management",
+    "category": "College",
+    "description": "",
+    "stack": [],
+    "url_image": "/portfolio/pm.png"   
+  },
+  {
+    "title": "IT Human Resource Management",
+    "category": "College",
+    "description": "",
+    "stack": [],
+    "url_image": "/portfolio/msdm.png"
+  }
+]
