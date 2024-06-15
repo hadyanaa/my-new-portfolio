@@ -171,12 +171,112 @@ export default function About() {
       </div>
 
       {/* experience */}
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-16 mb-32">
         <h3 className="text-primary text-center font-medium text-3xl">EXPERIENCE & EDUCATION</h3>
-        <div className="grid grid-cols-2 border border-primary h-64">
-
+        <div className="grid grid-cols-2 gap-8">
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-row gap-4">
+              <div className="flex flex-col min-w-fit">
+                <Image
+                  src="/icons/exp.png"
+                  alt="experience icon"
+                  width={100}
+                  height={100}
+                />
+                <div className="h-32 w-[1px] bg-secondary mx-auto"></div>
+              </div>
+              <div className="flex flex-col gap-8">
+                <div className="bg-secondary max-w-fit mt-8 px-4 py-2 rounded-lg">
+                  <p className="text-background font-normal text-base">Feb 2024 - Present</p>
+                </div>
+                <div className="flex flex-row gap-4">
+                  <h4 className="text-primary font-semibold text-2xl">Junior Developer -</h4>
+                  <h5 className="text-primary font-normal text-xl">PT Indosat Tbk</h5>
+                </div>
+                <div className="-mt-4">
+                  <p className="text-primary">Manage API Operations.</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row gap-4">
+              <div className="flex flex-col min-w-fit">
+                <Image
+                  src="/icons/exp.png"
+                  alt="experience icon"
+                  width={100}
+                  height={100}
+                />
+                <div className="h-48 w-[1px] bg-secondary mx-auto"></div>
+              </div>
+              <div className="flex flex-col gap-8">
+                <div className="bg-secondary max-w-fit mt-8 px-4 py-2 rounded-lg">
+                  <p className="text-background font-normal text-base">Nov 2023 - Feb 2024</p>
+                </div>
+                <div className="flex flex-row gap-4">
+                  <h4 className="text-primary font-semibold text-2xl">Frontend Developer -</h4>
+                  <h5 className="text-primary font-normal text-xl">PT Indosat Tbk</h5>
+                </div>
+                <div className="-mt-4">
+                  <p className="text-primary text-justify max-w-prose">- Implemented responsive and accessible user interfaces to ensure seamless customer interactions, aligning with web accessibility standards.<br />
+                  - Developed and built a comprehensive Digital Partnerships Portal for API Services, utilizing the Next.js framework and TypeScript.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row gap-4">
+              <div className="flex flex-col min-w-fit">
+                <Image
+                  src="/icons/exp.png"
+                  alt="experience icon"
+                  width={100}
+                  height={100}
+                />
+                <div className="h-56 w-[1px] bg-secondary mx-auto"></div>
+              </div>
+              <div className="flex flex-col gap-8">
+                <div className="bg-secondary max-w-fit mt-8 px-4 py-2 rounded-lg">
+                  <p className="text-background font-normal text-base">Mar 2023 - Nov 2023</p>
+                </div>
+                <div className="flex flex-row gap-4">
+                  <h4 className="text-primary font-semibold text-2xl">React Developer -</h4>
+                  <h5 className="text-primary font-normal text-xl">PT Ihsan Solusi Informatika</h5>
+                </div>
+                <div className="-mt-4">
+                  <p className="text-primary text-justify max-w-prose">- Implemented responsive and accessible user interfaces to ensure seamless customer interactions, aligning with web accessibility standards.<br />
+                  - Developed and built a comprehensive Bank Operating System for Sharia Banking institutions, utilizing the Next.js framework and TypeScript.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-row gap-4">
+              <div className="flex flex-col min-w-fit">
+                <Image
+                  src="/icons/edu.png"
+                  alt="experience icon"
+                  width={100}
+                  height={100}
+                />
+                <div className="h-44 w-[1px] bg-secondary mx-auto"></div>
+              </div>
+              <div className="flex flex-col gap-8">
+                <div className="bg-secondary max-w-fit mt-8 px-4 py-2 rounded-lg">
+                  <p className="text-background font-normal text-base">Mar 2023</p>
+                </div>
+                <div className="flex flex-col">
+                  <h4 className="text-primary font-semibold text-2xl">Information System -</h4>
+                  <h5 className="text-primary font-normal text-xl">Sekolah Tinggi Teknologi Terpadu Nurul Fikri</h5>
+                </div>
+                <div className="-mt-4">
+                  <p className="text-primary text-justify max-w-prose">Grade: 3.79/4.00<br />
+                  Thesis: Designing a Presence Information System for Student Mentoring Activities Using the Laravel Framework at STT NF
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   )
