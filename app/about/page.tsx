@@ -52,11 +52,11 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <h2 className="text-primary font-bold text-5xl">2+</h2>
+            <h2 className="text-primary font-bold text-5xl">2</h2>
             <p className="text-secondary font-normal text-2xl">Years Of Experience</p>
           </div>
         </div>
-        <button className="border border-primary rounded-full text-primary font-medium text-2xl w-72 p-4">
+        <button className="border border-primary hover:border-secondary rounded-full text-primary hover:text-secondary font-medium text-2xl w-72 p-4 transition duration-200">
           Download CV -&gt;
         </button>
       </div>

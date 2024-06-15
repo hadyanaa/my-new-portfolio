@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button: FC<ButtonProps> = ({ onClick, children, className }) => {
   return (
     <button
-      className={`border border-primary hover:border-secondary bg-background text-primary hover:text-secondary py-2 px-4 rounded-xl ${className}`}
+      className={`border border-primary hover:border-secondary bg-background text-primary hover:text-secondary py-2 px-4 rounded-xl ${className} transition duration-200`}
       onClick={onClick}
     >
       {children}
