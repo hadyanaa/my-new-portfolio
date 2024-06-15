@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="flex min-h-screen justify-start flex-col gap-28">
@@ -60,8 +62,121 @@ export default function About() {
       </div>
 
       {/* tech stack */}
-      <div>
+      <div className="flex flex-col gap-16">
         <h3 className="text-primary text-center font-medium text-3xl">MY TECH STACK</h3>
+        <div className="grid grid-cols-2 font-normal text-2xl">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <p className="text-primary">Frontend Development</p>
+              <div className="flex flex-row gap-4">
+                <Image
+                  src="/icons/fe-js.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={40}
+                />
+                <Image
+                  src="/icons/fe-ts.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={40}
+                />
+                <Image
+                  src="/icons/fe-react.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={34}
+                />
+                <Image
+                  src="/icons/fe-next.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-primary">Database Technologies</p>
+              <div className="flex flex-row gap-4">
+                <Image
+                  src="/icons/db-mysql.png"
+                  alt="icon mysql"
+                  width={40}
+                  height={40}
+                />
+                <Image
+                  src="/icons/db-postgresql.png"
+                  alt="icon postgresql"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <p className="text-primary">Backend Development</p>
+              <div className="flex flex-row gap-4">
+                <Image
+                  src="/icons/be-laravel.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={40}
+                />
+                <Image
+                  src="/icons/be-php.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={40}
+                />
+                <Image
+                  src="/icons/be-python.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={34}
+                />
+                <Image
+                  src="/icons/be-go.png"
+                  alt="icon javascript"
+                  width={50}
+                  height={16}
+                />
+                <Image
+                  src="/icons/be-nodejs.png"
+                  alt="icon javascript"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <p className="text-primary">Version Control Systems</p>
+              <div className="flex flex-row gap-4">
+                <Image
+                  src="/icons/vs-github.png"
+                  alt="icon mysql"
+                  width={40}
+                  height={40}
+                />
+                <Image
+                  src="/icons/vs-gitlab.png"
+                  alt="icon postgresql"
+                  width={40}
+                  height={40}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* experience */}
+      <div className="flex flex-col gap-16">
+        <h3 className="text-primary text-center font-medium text-3xl">EXPERIENCE & EDUCATION</h3>
+        <div className="grid grid-cols-2 border border-primary h-64">
+
+        </div>
+
       </div>
     </div>
   )
