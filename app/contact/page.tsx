@@ -1,8 +1,11 @@
 'use client'
 import Form from "@/components/form";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
+  const router = useRouter();
   return (
     <div className="flex min-h-screen justify-start flex-col gap-16">
       {/* header */}
@@ -47,22 +50,12 @@ export default function Contact() {
           </div>
           <p className="text-primary font-normal text-base">Or connect with me on social media</p>
           <div className="flex flex-row gap-2">
-            <div className="border border-primary p-2 rounded-full w-fit">
-              <Image
-                src="/icons/instagram.png"
-                alt="icon instagram"
-                width={20}
-                height={20}
-              />
-            </div>
-            <div className="border border-primary p-2 rounded-full w-fit">
-              <Image
-                src="/icons/linkedin.png"
-                alt="icon linkedin"
-                width={20}
-                height={20}
-              />
-            </div>
+            <button onClick={() => router.push('https://www.instagram.com/hady.an/')} className="flex justify-center items-center border border-primary hover:border-secondary text-primary hover:text-secondary p-2 rounded-full w-10 h-10">
+              <FaInstagram />
+            </button>
+            <button onClick={() => router.push('https://www.linkedin.com/in/hadyanaa/')} className="flex justify-center items-center border border-primary hover:border-secondary text-primary hover:text-secondary p-2 rounded-full w-10 h-10">
+              <FaLinkedin />
+            </button>
           </div>
         </div>
         <div>

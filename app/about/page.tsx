@@ -1,6 +1,23 @@
+'use client'
 import Image from "next/image";
+import { FaDownload } from "react-icons/fa";
+import { Bounce, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function About() {
+  const handleDownload = () => {
+    toast.success('Download Started!', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  }
   return (
     <div className="flex min-h-screen justify-start flex-col gap-28">
       {/* header */}
@@ -56,9 +73,10 @@ export default function About() {
             <p className="text-secondary font-normal text-2xl">Years Of Experience</p>
           </div>
         </div>
-        <button className="border border-primary hover:border-secondary rounded-full text-primary hover:text-secondary font-medium text-2xl w-72 p-4 transition duration-200">
-          Download CV -&gt;
-        </button>
+        <a onClick={handleDownload} href="Resume-Hadyan-Abdul-Aziz.pdf" className="flex flex-row gap-2 border border-primary hover:border-secondary rounded-full text-primary hover:text-secondary font-medium justify-center items-center text-2xl w-72 p-4 transition duration-200" download>
+          Download CV
+          <FaDownload />
+        </a>
       </div>
 
       {/* tech stack */}

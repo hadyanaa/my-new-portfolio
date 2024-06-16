@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./header";
 import GlowEffect from "@/components/glow";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "Portfolio | Hadyan Abdul Aziz",
@@ -24,6 +25,7 @@ export default function RootLayout({
         {/* <div className="flex-grow">
         </div> */}
         <GlowEffect />
+        <ToastContainer />
         <div className="grid grid-cols-12">
           <div>
             <Header />
