@@ -29,7 +29,7 @@ const Form: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-background border border-primary text-primary shadow-md rounded">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-accent border border-primary text-primary shadow-md rounded">
       <div className="mb-4">
         <label htmlFor="name" className="block text-sm font-normal mb-2">Name</label>
         <input
@@ -38,7 +38,7 @@ const Form: React.FC = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-3 py-2 border border-primary bg-background rounded"
+          className="w-full px-3 py-2 border border-background bg-background rounded"
           required
         />
       </div>
@@ -50,7 +50,7 @@ const Form: React.FC = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-3 py-2 border border-primary bg-background rounded"
+          className="w-full px-3 py-2 border border-background bg-background rounded"
           required
         />
       </div>
@@ -61,12 +61,12 @@ const Form: React.FC = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-3 py-2 border border-primary bg-background rounded"
+          className="w-full px-3 py-2 border border-background bg-background rounded"
           rows={4}
           required
         />
       </div>
-      <button type="submit" className="w-full border border-primary hover:border-secondary text-white hover:text-secondary py-2 px-4 rounded transition duration-200">Submit</button>
+      <button type="submit" className="w-full border border-primary hover:border-secondary bg-accent text-white hover:text-secondary py-2 px-4 rounded-full transition duration-200">Submit</button>
     </form>
   );
 };

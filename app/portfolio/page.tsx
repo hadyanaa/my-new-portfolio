@@ -53,11 +53,21 @@ export default function Portfolio() {
 
       {/* filter */}
       <div className="flex flex-row justify-center gap-4">
-        <Button onClick={() => handleFilter('')}>All</Button>
-        <Button onClick={() => handleFilter('Frontend')}>Frontend</Button>
-        <Button onClick={() => handleFilter('Fullstack')}>Fullstack</Button>
-        <Button onClick={() => handleFilter('Freelance')}>Freelance</Button>
-        <Button onClick={() => handleFilter('College')}>College</Button>
+        <Button
+          className={`${filterCategory === '' ? 'border-secondary text-secondary' : ''}`}
+          onClick={() => handleFilter('')}>All</Button>
+        <Button
+          className={`${filterCategory === 'Frontend' ? 'border-secondary text-secondary' : ''}`}
+          onClick={() => handleFilter('Frontend')}>Frontend</Button>
+        <Button
+          className={`${filterCategory === 'Fullstack' ? 'border-secondary text-secondary' : ''}`}
+          onClick={() => handleFilter('Fullstack')}>Fullstack</Button>
+        <Button
+          className={`${filterCategory === 'Freelance' ? 'border-secondary text-secondary' : ''}`}
+          onClick={() => handleFilter('Freelance')}>Freelance</Button>
+        <Button
+          className={`${filterCategory === 'College' ? 'border-secondary text-secondary' : ''}`}
+          onClick={() => handleFilter('College')}>College</Button>
       </div>
 
       {/* list portfolio */}
