@@ -76,7 +76,7 @@ export default function Portfolio() {
       {/* list portfolio */}
       <div className="grid grid-cols-3 gap-4 mb-32">
         {filteredPortfolio.map((item, index) => (
-          <a href={item.url_project} target="_blank">
+          <a key={`link-${index}`} href={item.url_project} target="_blank">
             <div 
               // onClick={() => {router.push(item.url_project)}}
               className="relative w-full h-52 border border-primary text-primary text-sm rounded-xl cursor-pointer"

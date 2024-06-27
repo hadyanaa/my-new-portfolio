@@ -26,8 +26,8 @@ export default function Contact() {
       {/* contact */}
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-4">
-          <h3 className="text-primary font-medium text-3xl">LET'S MAKE A CONNECTION</h3>
-          <p className="text-primary font-normal text-base">I am always looking for new ways to connect with partners. Whether you have a question, a suggestion, or just want to chat, I'm here to hear from you.</p>
+          <h3 className="text-primary font-medium text-3xl">LET&apos;S MAKE A CONNECTION</h3>
+          <p className="text-primary font-normal text-base">I am always looking for new ways to connect with partners. Whether you have a question, a suggestion, or just want to chat, I&apos;m here to hear from you.</p>
           <div
             className="flex flex-row gap-2 border border-primary hover:border-secondary py-2 px-4 justify-center items-center rounded-full w-fit cursor-pointer"
             onMouseEnter={() => {setIsEmailHovered(true)}}
