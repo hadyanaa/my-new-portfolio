@@ -1,6 +1,7 @@
 'use client'
 import Button from "@/components/button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 interface PortfolioItem {
@@ -9,9 +10,11 @@ interface PortfolioItem {
   description: string;
   stack: [];
   url_image: string;
+  url_project: string;
 }
 
 export default function Portfolio() {
+  const router = useRouter();
   const [portfolio, setPortfolio] = useState<PortfolioItem[]>([]);
   const [filteredPortfolio, setFilteredPortfolio] = useState<PortfolioItem[]>([]);
   const [filterCategory, setFilterCategory] = useState<string>('');
@@ -73,19 +76,29 @@ export default function Portfolio() {
       {/* list portfolio */}
       <div className="grid grid-cols-3 gap-4 mb-32">
         {filteredPortfolio.map((item, index) => (
-          <div className="relative w-full h-52 border border-primary text-primary text-sm rounded-xl" key={index}>
-            <Image
-              className="rounded-xl hover:opacity-10"
-              src={item.url_image}
-              alt={`${item.title} Image`}
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="flex flex-col items-center mt-8">
-              <h4 className="font-semibold text-lg">{item.title}</h4>
-              <h4>{item.description}</h4>
+          <a href={item.url_project} target="_blank">
+            <div 
+              // onClick={() => {router.push(item.url_project)}}
+              className="relative w-full h-52 border border-primary text-primary text-sm rounded-xl cursor-pointer"
+              key={index}
+            >
+              <Image
+                className="rounded-xl hover:opacity-10 hover:z-10"
+                src={item.url_image}
+                alt={`${item.title} Image`}
+                layout="fill"
+                objectFit="cover"
+              />
+              <div className="flex flex-col items-center mt-8 px-4">
+                <h4 className="font-semibold text-lg">{item.title}</h4>
+                <h4>{item.description}</h4>
+              </div>
+              {/* <Button
+                onClick={() => {router.push(item.url_project)}}
+                className="flex mx-auto mt-4 hover:border-secondary z-0"
+              >See Project</Button> */}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

@@ -6,6 +6,7 @@ import Header from "./header";
 import { motion, AnimatePresence } from 'framer-motion';
 import { ToastContainer } from "react-toastify";
 import { usePathname } from "next/navigation";
+import 'react-tooltip/dist/react-tooltip.css';
 
 // export const metadata: Metadata = {
 //   title: "Portfolio | Hadyan Abdul Aziz",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Portfolio | Hadyan Abdul Aziz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaDownload } from "react-icons/fa";
 import { Bounce, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Tooltip } from 'react-tooltip';
 
 export default function About() {
   const handleDownload = () => {
@@ -88,24 +89,36 @@ export default function About() {
               <p className="text-primary">Frontend Development</p>
               <div className="flex flex-row gap-4">
                 <Image
+                  data-tooltip-id="js"
+                  data-tooltip-content={"Javascript"}
+                  data-tooltip-place="bottom"
                   src="/icons/fe-js.png"
                   alt="icon javascript"
                   width={40}
                   height={40}
                 />
                 <Image
+                  data-tooltip-id="ts"
+                  data-tooltip-content={"Typescript"}
+                  data-tooltip-place="bottom"
                   src="/icons/fe-ts.png"
-                  alt="icon javascript"
+                  alt="icon typescript"
                   width={40}
                   height={40}
                 />
                 <Image
+                  data-tooltip-id="react"
+                  data-tooltip-content={"ReactJS"}
+                  data-tooltip-place="bottom"                
                   src="/icons/fe-react.png"
                   alt="icon javascript"
                   width={40}
                   height={34}
                 />
                 <Image
+                  data-tooltip-id="next"
+                  data-tooltip-content={"NextJS"}
+                  data-tooltip-place="bottom" 
                   src="/icons/fe-next.png"
                   alt="icon javascript"
                   width={40}
@@ -117,12 +130,18 @@ export default function About() {
               <p className="text-primary">Database Technologies</p>
               <div className="flex flex-row gap-4">
                 <Image
+                  data-tooltip-id="mysql"
+                  data-tooltip-content={"MySQL"}
+                  data-tooltip-place="bottom" 
                   src="/icons/db-mysql.png"
                   alt="icon mysql"
                   width={40}
                   height={40}
                 />
                 <Image
+                  data-tooltip-id="postgresql"
+                  data-tooltip-content={"Postgresql"}
+                  data-tooltip-place="bottom" 
                   src="/icons/db-postgresql.png"
                   alt="icon postgresql"
                   width={40}
@@ -136,32 +155,47 @@ export default function About() {
               <p className="text-primary">Backend Development</p>
               <div className="flex flex-row gap-4">
                 <Image
+                  data-tooltip-id="laravel"
+                  data-tooltip-content={"Laravel"}
+                  data-tooltip-place="bottom" 
                   src="/icons/be-laravel.png"
-                  alt="icon javascript"
+                  alt="icon laravel"
                   width={40}
                   height={40}
                 />
                 <Image
+                  data-tooltip-id="php"
+                  data-tooltip-content={"PHP"}
+                  data-tooltip-place="bottom" 
                   src="/icons/be-php.png"
-                  alt="icon javascript"
+                  alt="icon php"
                   width={40}
                   height={40}
                 />
                 <Image
+                  data-tooltip-id="python"
+                  data-tooltip-content={"Python"}
+                  data-tooltip-place="bottom" 
                   src="/icons/be-python.png"
-                  alt="icon javascript"
+                  alt="icon python"
                   width={40}
                   height={34}
                 />
                 <Image
+                  data-tooltip-id="go"
+                  data-tooltip-content={"Go"}
+                  data-tooltip-place="bottom" 
                   src="/icons/be-go.png"
-                  alt="icon javascript"
+                  alt="icon go"
                   width={50}
                   height={16}
                 />
                 <Image
+                  data-tooltip-id="node"
+                  data-tooltip-content={"NodeJS"}
+                  data-tooltip-place="bottom" 
                   src="/icons/be-nodejs.png"
-                  alt="icon javascript"
+                  alt="icon nodejs"
                   width={40}
                   height={40}
                 />
@@ -171,14 +205,20 @@ export default function About() {
               <p className="text-primary">Version Control Systems</p>
               <div className="flex flex-row gap-4">
                 <Image
+                  data-tooltip-id="github"
+                  data-tooltip-content={"Github"}
+                  data-tooltip-place="bottom" 
                   src="/icons/vs-github.png"
-                  alt="icon mysql"
+                  alt="icon github"
                   width={40}
                   height={40}
                 />
                 <Image
+                  data-tooltip-id="gitlab"
+                  data-tooltip-content={"Gitlab"}
+                  data-tooltip-place="bottom" 
                   src="/icons/vs-gitlab.png"
-                  alt="icon postgresql"
+                  alt="icon gitlab"
                   width={40}
                   height={40}
                 />
@@ -187,6 +227,19 @@ export default function About() {
           </div>
         </div>
       </div>
+      <Tooltip id="js" />
+      <Tooltip id="ts" />
+      <Tooltip id="react" />
+      <Tooltip id="next" />
+      <Tooltip id="mysql" />
+      <Tooltip id="postgresql" />
+      <Tooltip id="laravel" />
+      <Tooltip id="php" />
+      <Tooltip id="python" />
+      <Tooltip id="go" />
+      <Tooltip id="node" />
+      <Tooltip id="github" />
+      <Tooltip id="gitlab" />
 
       {/* experience */}
       <div className="flex flex-col gap-16 mb-32">
