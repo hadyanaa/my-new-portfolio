@@ -73,7 +73,6 @@ export default function Portfolio() {
           onClick={() => handleFilter('College')}>College</Button>
       </div>
 
-      {/* nambah komentar aja */}
 
       {/* list portfolio */}
       <div className="grid grid-cols-3 gap-4 mb-32">
