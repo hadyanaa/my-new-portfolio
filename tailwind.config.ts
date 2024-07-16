@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'mobile': '100px',
+        'xs': '480px',    // Ukuran layar tambahan
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         primary: '#FFFFFF',
         secondary: '#9290C3',

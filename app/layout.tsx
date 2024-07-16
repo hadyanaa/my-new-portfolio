@@ -32,10 +32,9 @@ export default function RootLayout({
             </div> */}
             {/* <GlowEffect /> */}
             <ToastContainer />
+            <Header />
             <div className="grid grid-cols-12">
-              <div>
-                <Header />
-              </div>
+              <div></div>
               <div className="col-span-10">
                 <AnimatePresence mode="wait">
                   <motion.div

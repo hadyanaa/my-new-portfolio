@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function Header(){
   const pathname = usePathname();
   return (
-    <div className="fixed top-64 left-7 flex flex-col gap-4">
+    <div className="fixed z-50 bottom-10 left-1/2 transform -translate-x-1/2 flex flex-row items-center justify-center gap-4">
       <Link href="/">
         {pathname === '/' ? <Image src="/icons/home.png" alt="icon home" width={48} height={48}/> :
         <Image src="/icons/home-white.png" alt="icon home" width={48} height={48}
